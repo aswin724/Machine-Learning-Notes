@@ -1,0 +1,13 @@
+Assumptions of Simple linear regression:
+
+1. Linear relationship.
+2. Multivariate normality.
+3. No or little multicollinearity.
+4. No auto-correlation.
+5. Homoscedasticity.(Same varinace for all predictor variables from the regression line. Around the line, the predictors shuld not be concentrated on one side and scattered on the other)
+
+
+Ordinary Least squares:
+Aim--- To find the mininum of SUM OF SQUARES(IE sum(y-yhat)^2)
+
+Note- In Python for Simple Linear Regression, the library takes care of FEATURE SCALING 
