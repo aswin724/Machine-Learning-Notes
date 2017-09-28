@@ -1,1 +1,16 @@
+Assumptions - Mostly same as that of simple linear regression
+
+In case of categorical variables- Dummy variable trap:
+If we include all the dummy variables say 'n', there will be multi collinearity. So use n-1
+
+Frame work:
+5 types:
+1. All in (not recommended, only if sure of variables)
+2. Backward elimination (Fastest of all iterative models)
+3. Forward selection 
+4. Bidirectional Elimination/stepwise regression (perform iterations of forward selection followed by backward elimination)
+5. Score comparison/all possible models -- Most resource consuming 
+  -- Select a goodness of fit criterion
+  --  build all possible combination of models ((2^N)-1)
+  -- choose the one with the best criterion
 
