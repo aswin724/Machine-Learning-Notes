@@ -1,0 +1,12 @@
+CART- Classifiaction and Regression Trees
+
+Simple linear, multilinear, polynomial, svr are all continuous regresion models. 
+Decision Tree regression and RF Regression are non-continuous regression models. (This is viewed in the plot code)
+
+1. Regression trees makes split in the data grouping a certain part together on several dimensions depending on the number of variables 
+2. The splits are done based on a metric called Information Entropy. Simply said,when a particular split is done, is it increasing the amount of information about the points(if it is adding some value to the way the data is grouped). It stops when there algo reaches certain minimum gain.
+3. After the split are done, the value of y of any point in the particular split is the average of fitted 'y' data.
+
+
+Note:
+This is an interesting model to use in case of LOT of DIMENSIONS.
