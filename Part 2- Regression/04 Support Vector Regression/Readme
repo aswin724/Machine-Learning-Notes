@@ -1,0 +1,7 @@
+In SKlearn, svr does not have feature scaling algorithms internally. 
+
+From my observations:
+1. Before scaling: 'poly' kernel performed better than 'rbf'
+2. After Feature scaling: 'rbf' performed better than 'poly' kernel
+
+Advantage: SVR has penalty parameters in its algorithm, and so we can see the salary of 'CEO' does not affect the curve that much.
