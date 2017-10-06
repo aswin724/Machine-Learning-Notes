@@ -1,0 +1,29 @@
+Metrics to measure the performance of the Regression model:
+
+1. R- squared: (Goodness of fit Parameter)
+    Sum of Squares of residuals(SSR) = sum(y-yhat)^2 -------- Calculated from the results of the model
+    Total sum of squeares(TSS) = sum(y-yavg)^2       -------- Calcualted from the base model (ie. AVEGAGE MODEL)
+    
+    R-squared = 1- (SSE/TSS)
+    
+    Can R squared be negative? (It cannot be greater than one) 
+    ANS- Yes. If the model fits the data worse than the Average line. 
+    
+2. Adjusted R squared:
+    Purpose:  As we add more variables to the model, R square will rise for sure (SSR will be reduced while TSS remains the same)
+    Use: So, we use Adj. R-squared to penalise the model for adding un-important variables 
+    
+    Adj. R squared = 1 - (1-R squared)((n-1)/(n-p-1))
+    p= number of regressors(ie.independent vars.)
+    n= Sample size 
+    It works in 2 ways that are balanced:
+    1. If unimportant variables are added, p increases and so n-p-1 decreases, leading to decrease in Adj.R squared
+    2. If the variable added really makes an impact to the model, the (1-R squared) increases and overcomes the impact of n-p-1 and results in increase in Adj.R squared 
+    
+    NOTE: It is always LOWER than the R squared value.
+
+
+Interpreting co-efficients:
+
+NOTE: Always represent the magitude of the co-effs in Units of Independent variables (ie. This much inc/dec per Unit of variables)
+    
