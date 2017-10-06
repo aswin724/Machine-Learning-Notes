@@ -1,0 +1,13 @@
+It is a part of the ensemble learning. Ensemble algo are more powerful and stable to changes in datasets.
+
+Steps of Random forest:
+1. Pick k random number of data points
+2. Build a decision tress for this k points
+3. Choose the number of trees(n) (atleast 500 trees) and repeat steps 1,2
+4. For a new data point, make all the trees predict for y and take avg of all those predictions
+
+Note: 
+1. when comparing the plot of the decision tree model with the RF regression, we get a lot more steps(lot more of splits) in RF.
+2. when we add more nuber of trees, the all the data points in a split might converge to same value and will fail to generalise for new data 
+3. Also, more number of trees doesn't necessarily mean more splits(or steps in the plot) because the information entropy gain parameter kicks in and stops the splits. 
+4. More trees will take longet time to run the model,
