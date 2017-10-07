@@ -1,0 +1,12 @@
+Eqn:    ln(p/(1-p)) = b0 + b1(X1) +....
+
+Final probability score: '
+  1. Probability = e^y/ (1+e^y) ------------- Or if this eqn is multiplied&divied by e^-y, p value will be same as those if sigmoid function
+  2. Sigmoid Function: if y= b0 + b1(X1) +.... , then p= 1/(1+(e^-y))  (another representation for the probability value eqn)
+
+
+How to find the Optimal Cut-off?
+ANSWER:
+1. Plot sensitivity against (1-specificity) to get a ROC diargam.
+2. Youden-Index: Detemine the point for which (sensitifity + specificity-1) is maximal. 
+3. Another "optimal cut-off" is the value for which the point on the ROC curve has the minimum distance to the upper left corner (where sensitivity=1 and specificity=1). 
