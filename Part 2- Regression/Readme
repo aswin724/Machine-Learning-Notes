@@ -10,3 +10,11 @@ Models Covered:
 4. Support Vector for Regression (SVR)
 5. Decision Tree Classification
 6. Random Forest Classification
+
+
+
+Why is feature scaling not needed for Decision Tree model types:
+ANSWER:
+One big reason is that they do a slice on the data, and then after that slice, it doesn't matter how big of a value you have.  
+If you had five data points, and one of their features looked like {1,2,3,4,1000000}{1,2,3,4,1000000}, you might choose a split point at x = 2.5.  At that point, 3,4, and a million all go into the same bucket, and their values are treated the same way.  You could replace one million with something orders of magnitude bigger and it wouldn't matter, or you could change its value to 5 and it wouldn't matter.  This restricts how much influence the outlying point can have.  
+Contrast with linear regression, where the bigger that point gets, the more influence it will have on the entire model.
