@@ -4,7 +4,8 @@ Final probability score: '
   1. Probability = e^y/ (1+e^y) ------------- Or if this eqn is multiplied&divied by e^-y, p value will be same as those if sigmoid function
   2. Sigmoid Function: if y= b0 + b1(X1) +.... , then p= 1/(1+(e^-y))  (another representation for the probability value eqn)
 
-Since Logistic Regression is a linear classifier, the decision boundary is also linear. 
+Since Logistic Regression is a linear classifier, the decision boundary(optimal line that splits the data) is also linear. 
+So there will always be data points on either side that do not belong in split made by the model. 
 
 How to find the Optimal Cut-off?
 ANSWER:
