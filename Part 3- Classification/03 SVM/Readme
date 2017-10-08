@@ -1,0 +1,12 @@
+1. SVM works to find the best decision line that can split the data.
+2. It is found using the Maximum margin. The line that is at Maximum distance from the support Vectors.
+3. Suppport vectors/points are the only points that matter for creating the decision line for the model.
+4. Support Vecotrs are the point that are most difficult to classify
+
+Derivation:
+https://www.dezyre.com/data-science-in-r-programming-tutorial/support-vector-machine-tutorial 
+
+How is SVM different from other models?
+ANSWER:
+Most of the algos learn how MOST of the data points are(ie.common data points). 
+SVM looks at the near extreme of the data (points close to the classification boundary)
