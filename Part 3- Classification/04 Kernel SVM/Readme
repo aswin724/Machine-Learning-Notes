@@ -1,0 +1,19 @@
+Used for cases where the data is not linearly seperable.
+
+Mapping Data to a higher Dimension:
+1. Adding dimensionality(mapping function) to data to convert not-linearly seperable data to linearly seperable data 
+2. But this is computationally intensive
+
+KERNELS:  Website- http://mlkernels.readthedocs.io/en/latest/kernels.html 
+Concept: Select a landmark in the data and depending on the distance from the landmark, results are claculated
+Popular Types:
+1. Gaussian Radial Basis Function(RBF) kernel: (View the attached image)
+    Perform higher dimensional computations for non-linear data effectively without the need for computer intensive operation
+2. Sigmoid kernel
+3. Polynomial kernel
+
+
+
+
+
+
