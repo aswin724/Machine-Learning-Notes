@@ -3,7 +3,23 @@
 3. Suppport vectors/points are the only points that matter for creating the decision line for the model.
 4. Support Vecotrs are the point that are most difficult to classify
 
+Margin hyperplanes:
+Represented by ---- ((w^T)*x) + b -- where b(bias) controls distance from origin and ((w^T)*x) (ie.normalvector -- in case of 2D, it is x,y points on a plot) controls the orientation.
+Width of the margin:
+2/(||w||)  ----- ||w|| is the length of the normal vector
+Working:
+1. Purpose is to max the Width of the margin (ie. max of 2/(||w||)) . 
+2. But this means minimise the length of normal vector (ie min of ||w||/2)
+
+Constraints:
+1. Plus class is ((w^T)*x) + b >=1
+2. Minus class is ((w^T)*x) + b <=  -1 
+3. If we multiply the the above constraints with the labels ( y * ((w^T)*x) + b) , the same conditions should hold true 
+
+
 Derivation:
+https://www.youtube.com/watch?v=5zRmhOUjjGY
+http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf
 https://www.dezyre.com/data-science-in-r-programming-tutorial/support-vector-machine-tutorial 
 
 How is SVM different from other models?
