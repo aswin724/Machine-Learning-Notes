@@ -1,0 +1,7 @@
+Steps:
+1. Choose the number k of neighbors (default=5)
+2. Take k nearest neighbors of new data point, according to Eucledian distance
+3. Among these k neighbors, count the no.of data points in each category
+4. Assign the new data point to the category where we counted the most neighbors
+
+
