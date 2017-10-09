@@ -1,0 +1,5 @@
+Steps:
+1. Pick a k random data points 
+2. Build decision tree for these points
+3. Build N number of trees by repeating steps 1,2
+4. For a new data point, get the 'mode' or majority class predicted by these trees as the final prediction
