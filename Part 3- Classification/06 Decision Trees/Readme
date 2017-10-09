@@ -1,0 +1,18 @@
+Decision Tree:
+The core algorithm for building decision trees called ID3 which employs a top-down, greedy search through the space of possible branches with no backtracking. 
+ID3 uses Entropy and Information Gain to construct a decision tree.
+
+In most of the cases, complete splits of the data doesn't occur.
+In that case, at the terminal node, a probabilistic classification occurs.(ie.Likelihood of the which class is max at the node--- in other words, mode)
+
+Additional methods on top of Decision Trees:
+1. RF
+2. Gradient boosting 
+
+Criterions used:
+1. Gini impurity:
+2. Information Entropy: 
+
+Differences:
+1. It only matters in 2% of the cases whether you use gini impurity or entropy.
+2. Entropy might be a little slower to compute (because it makes use of the logarithm).
