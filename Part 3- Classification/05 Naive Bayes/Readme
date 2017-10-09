@@ -1,0 +1,54 @@
+Bayes theorem:(think spanners)
+
+Posterior probability ie. P(A/B) = (P(B/A) * P(A))/ P(B)
+where:
+P(A) = prior probability
+P(B) = marginal likelihood
+P(B/A) = likelihood
+
+
+Example:
+Machine 1: 30 spanners/hr
+Machine 2: 20 spanners/hr
+
+Total: 1% are defective ---- 50% came from Machine 1 and 50% from Machine 2
+
+Question: What is prob that spanner from Machine 2 is defective?
+
+Answer:
+Prob. of spanner coming from M1:----- P(M1)= 30/50=0.6
+Prob. of spanner coming from M2:----- P(M2)= 20/50=0.4
+P(Defect) = 1%
+P(m1/Defect) = 50%
+P(M2/Defect)= 50%
+
+P(Defect/M2)=?
+P(Defect/M2) = (P(M2/Defect) * P(Defect))/ P(M2)   = (0.5*0.01) / 0.4 = 0.0125 = 1.25%
+
+Naive Bayes Classifier Intuition:
+
+This is a probabilistic classifier. First we calc. Probabilities and then assign class.
+
+Problem: Given data: Feature(x1,x2,...) consider as X. Dependent= Walks/Drives to work
+
+Step 1:  P(Walks/X) = P(X/Walks)*P(Walks)/P(X)
+1. P(Walks) = No.of Walks class/Total data points
+2. For calculation of P(X) of a new data point, draw a pre-defined radius and all points(excluding the new point) inside that radius are marked similar 
+P(X) = No.of.similar obsrevations/ Total Observations
+3.  P(X/Walks) = From the selected circle, find people who walk having the similar features, from total no.of.walkers
+    P(X/Walks) = Similar data points among walkers in the circle/ Total no.of.walkers in the data	 
+
+Step 2:  P(Drives/X) = P(X/Drives)*P(Drives)/P(X)
+
+Step 3:  P(Walks/X) vs P(Drives/X) (Both add up to 1). The final class is the one with the greater probability 
+
+Extra Intuition:
+
+1. Why "Naive" Bayes? 
+ANSWER- It has an independence assumption which is not the case. So it is 'naive' in its assumptions
+
+2. Removing P(X) - This remains the same for both P(Walks/X) & P(Drives/X) calculations. 
+	  It is the common denominator in both the formula. So it can be removed, ONLY if we are COMPARING P(Wlaks/X) and P(Drives/X) 
+
+3. What if there are more than 2 classes?
+
