@@ -1,3 +1,18 @@
+Assumptions:
+1. Dependent variable should be measured on a dichotomous scale
+2. One or more independent variables, which can be either continuous (i.e., an interval or ratio variable) or categorical (i.e., an ordinal or nominal variable)
+3. Independence of observations, and Dependent variable should have mutually exclusive and exhaustive categories.
+4. There needs to be a linear relationship between any continuous independent variables and the logit transformation of the dependent variable
+
+Logistic Regression also drops some of the assumptions of linear regression:
+1. Does not assume normality of variables (both DV and IVs).
+2. Does not assume linearity between DV and IVs.
+3. Does not assume homoscedasticity.
+4. Does not assume normal errors.
+
+
+
+
 Eqn:    ln(p/(1-p)) = b0 + b1(X1) +....
 
 Final probability score: '
