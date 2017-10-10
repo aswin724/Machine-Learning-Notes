@@ -1,0 +1,23 @@
+Parameters:
+1. True positive, Treu negative, False Positive(Type 1 Error), False Negative(Type 2 Error). 
+2. Confusion matrix: "Actual" on the left, "Predicted" on top 
+3. Accuracy = TP+TN/Total ---- NOTE: Accuracy is not always the correct measuring parameter
+4. Cumulative Accuracy Profile(or Gain chart)(or similar to KS chart)
+5. ROC(Receiver Operating Characteristic) (TPR(or recall or sensitivity) vs FPR(or 1-specificity or fp/(fp+tn))
+6. Precision= tp/(tp+fp)
+7. Recall or sensitivity= tp/(tp+fn)
+8. Specificity= tn/(tn+fp)
+9. Area under the curve(AUC)
+8. Concordance
+9. Discordance
+10. somer_sd
+11. KS_Stat
+
+
+Model Usage:
+1. Logistic Regression or Naive Bayes when you want to rank your predictions by their probability. For example if you want to rank your customers from the highest probability that they buy a certain product, to the lowest probability. Eventually that allows you to target your marketing campaigns. And of course for this type of business problem, you should use Logistic Regression if your problem is linear, and Naive Bayes if your problem is non linear.
+2. SVM when you want to predict to which segment your customers belong to. Segments can be any kind of segments, for example some market segments you identified earlier with clustering.
+3. Decision Tree when you want to have clear interpretation of your model results.
+4. Random Forest when you are just looking for high performance with less need for interpretation. 
+
+
