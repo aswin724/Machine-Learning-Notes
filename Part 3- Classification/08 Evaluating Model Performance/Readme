@@ -9,7 +9,7 @@ Parameters:
 8. Specificity(or TNR)= tn/(tn+fp)
 8.a Sensitivity vs specificity curve is an HOURGLASS ON ITS SIDE
 9. Area under the curve(AUC)
-8. Concordance: No.of possible pairs where the prob. of respondants is greater than the other variable/s
+8. Concordance: No.of possible pairs where the predicted prob. of respondants(taken from Actual values) is greater than the predicted prob. other variable/s(taken from Actual values).
 9. Discordance(vice versa of concordance), Tied(where prob is equal)
 10. somer_sd
 11. KS_Stat: max(Cumulative % of 1s (ie. cuumulative table of 1s in that decile compared to 1s in all deciles) - Cumulative % of 0s)
