@@ -5,13 +5,17 @@ Parameters:
 4. Cumulative Accuracy Profile(or Gain chart)(or similar to KS chart)
 5. ROC(Receiver Operating Characteristic) (TPR(or recall or sensitivity) vs FPR(or 1-specificity or fp/(fp+tn))
 6. Precision= tp/(tp+fp)
-7. Recall or sensitivity= tp/(tp+fn)
-8. Specificity= tn/(tn+fp)
+7. Recall or sensitivity or TPR= tp/(tp+fn)
+8. Specificity(or TNR)= tn/(tn+fp)
+8.a Sensitivity vs specificity curve is an HOURGLASS ON ITS SIDE
 9. Area under the curve(AUC)
-8. Concordance
-9. Discordance
+8. Concordance: No.of possible pairs where the prob. of respondants is greater than the other variable/s
+9. Discordance(vice versa of concordance), Tied(where prob is equal)
 10. somer_sd
-11. KS_Stat
+11. KS_Stat: max(Cumulative % of 1s (ie. cuumulative table of 1s in that decile compared to 1s in all deciles) - Cumulative % of 0s)
+    This values shows how good the model is able to differentiate between two different classes(0 and 1)
+12. Youden Index: To find cutoff= prob. where max(sensitivity+specificity-1)
+    
 
 
 
