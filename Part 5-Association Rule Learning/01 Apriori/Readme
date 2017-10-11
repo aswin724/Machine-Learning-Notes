@@ -1,1 +1,22 @@
+It has 3 parts:
+1. Support 
+2. Confidence
+3. Lift
+
+Support: (support for a particular item in total transaction)
+1. Market basket optimisation : Support for an Item=Support(I2) = # transactins having item I2 / Total # transactions
+2. Movie recommendations: Support(Movie2) = # watchlists having movie M2 / Total # watchlists
+
+Confidence:
+1. Market basket optimisation :Confidence(I1 to I2) = # transactins having item I1 and I2 / Total # transactions having I1
+2. Movie recommendations: Confidence(M1 to M2) = # watchlists having movie M1 and M2 / Total # watchlists having Movie 1
+
+Lift= Confidence/Support ---- Improvement from the random selection
+
+
+Steps:
+1. Set a minimum support and confidence 
+2. Take all subsets in transactions having support higher than minimum support
+3. Take all the rules of these subsets having higher confidence than min.confidence
+4. Sort the rules by decreasing lift 
 
