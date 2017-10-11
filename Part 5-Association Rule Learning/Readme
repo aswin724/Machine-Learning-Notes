@@ -1,4 +1,9 @@
 People who bought also bought ... That is what Association Rule Learning will help us figure out. \
 
+Used in:
+1. Movie preferences
+2. Market Basket optimisation problems etc..
+
+Algorithms:
 1. Apriori
 2. Eclat
