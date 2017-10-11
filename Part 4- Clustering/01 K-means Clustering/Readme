@@ -1,0 +1,15 @@
+K-means Clustering:
+Steps:
+1. Choose K number of clusters
+2. Select at random K points as centroids(they don't have to be a part of dataset)
+3. Assign each data point to closest(generally eucledian distance is used) clusters. This form k clusters
+4. Compute and place the new centroid of each cluster
+5. Repeat step 3, 4 untill model is ready(till there is no change in computed centroid)
+
+Random Initialisation trap(it is already considered in both R and python):
+Different clusters can be formed from same data for different Random Centroid initialisation.
+Solution: K-means++ algorithm 
+
+Optimal Cluster: (Elbow curve of WCSS vs No.of.clusters)
+Metric used: Within Cluster Sum of Squares(WCSS or intertia_ (as referred in scikit learn)) = sum(square of distance b/w each point to centroid of cluster 1) + sum(square of distance b/w each point to centroid of cluster 2) +...... 
+
