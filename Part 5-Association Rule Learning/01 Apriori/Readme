@@ -15,7 +15,8 @@ Lift= Confidence/Support ---- Improvement from the random selection
 
 
 Steps:
-1. Set a minimum support and confidence 
+1. Set a minimum support and confidence (look in the code for explanation)  
+   Minimum Support- Depends on products that makes business sense and meaningful impact 
 2. Take all subsets in transactions having support higher than minimum support
 3. Take all the rules of these subsets having higher confidence than min.confidence
 4. Sort the rules by decreasing lift 
