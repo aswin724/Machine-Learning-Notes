@@ -7,11 +7,11 @@ Support: (support for a particular item/combo in total transaction)
 1. Market basket optimisation : Support for an Item combo=Support(I2&I1) = # transactins having item I2 and I1 / Total # transactions
 2. Movie recommendations: Support(Movie2 and Movie2) = # watchlists having movie M2 and M1 / Total # watchlists
 
-Confidence:
-1. Market basket optimisation :Confidence(I1 to I2) = # transactins having item I1 and I2 / Total # transactions having I1
-2. Movie recommendations: Confidence(M1 to M2) = # watchlists having movie M1 and M2 / Total # watchlists having Movie 1
+Confidence: = find prob. of people getting Y after getting X
+1. Market basket optimisation : Confidence(I1 to I2)=Support(I1 to I2)/ Support(I1)
+2. Movie recommendations: Confidence(M1 to M2)=Support(M1 to M2)/ Support(M1)
 
-Lift= Confidence/Support ---- Improvement from the random selection
+Lift= Finding the prob. of Y when useres do X, while controlling for popularity if Y (or Confidence/Support  (not used))
 
 
 Steps:
