@@ -15,6 +15,7 @@ Parameters:
 11. KS_Stat: max(Cumulative % of 1s (ie. cuumulative table of 1s in that decile compared to 1s in all deciles) - Cumulative % of 0s)
     This values shows how good the model is able to differentiate between two different classes(0 and 1)
 12. Youden Index: To find cutoff= prob. where max(sensitivity+specificity-1)
+13. WOE and IV:   http://www.listendata.com/2015/03/weight-of-evidence-woe-and-information.html 
     
 
 
