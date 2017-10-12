@@ -1,0 +1,14 @@
+Collaborative Filtering algorithm considers “User Behaviour” for recommending items. 
+They exploit behaviour of other users and items in terms of transaction history, ratings, selection and purchase information. 
+Other users behaviour and preferences over the items are used to recommend items to the new users. 
+In this case, features of the items are not known.
+
+Stpes:
+1. create a matrix of user features for each user (U)
+2. Create another matrix of item ratings by each user
+3. From the matrix, by formaing quations for each user rating(ie. Transpose(U)*Item Feature matrix), we'll get eqns (No.of.eqn= no.of users who rated the product)
+4. Solve these eqns for getting the feature matrix of the item. Repeat for all items
+5. Recommender items for each user formula: MAX(U1TS1, U1TS2, U1TS3, U1TS4, U1TS5)
+
+Thoery: https://www.analyticsvidhya.com/blog/2015/10/recommendation-engines/
+
