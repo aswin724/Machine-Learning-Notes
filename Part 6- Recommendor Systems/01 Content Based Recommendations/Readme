@@ -7,3 +7,13 @@ Stpes:
 2. For each user, the recommended item according to the users preferences are: MAX(Transpose(U)*I1,(Transpose(U)*I2,(Transpose(U)*I3,...)
 3. Ususlly, the items with higher scores obtained from the above formula are recommended to the user.
 
+
+Advantages:
+1. User independence: collaborative filtering needs other users' rating to find the similarity between the users and then give the suggestion. Instead, content-based method only have to analyze the items and user profile for recommendation.
+2. Transparency: collaborative method gives you the recommendation because some unknown users have the same taste like you, but content-based method can tell you  they recommend you the items based on what features. 
+3. No cold start: opposite to collaborative filtering, new items can be suggested before being rated by a substantial number of users. 
+
+Disadvantages:
+1. Limited content analysis: if the content does not contain enough information to discriminate the items precisely, the recommendation will be not precisely at the end.
+2. Over-specialization: content-based method provides a limit degree of novelty, since it has to match up the features of profile and items. A totally perfect content-based filtering may suggest nothing "surprised." 
+3. New user: when there's not enough information to build a solid profile for a user, the recommendation could not be provided correctly. 
