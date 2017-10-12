@@ -16,6 +16,17 @@ Parameters:
     This values shows how good the model is able to differentiate between two different classes(0 and 1)
 12. Youden Index: To find cutoff= prob. where max(sensitivity+specificity-1)
 13. WOE and IV:   http://www.listendata.com/2015/03/weight-of-evidence-woe-and-information.html 
+    Weight of Evidence: WOE = In(% of non-events ➗ % of events)
+        1. For a continuous variable, split data into 10 parts (or lesser depending on the distribution).
+        2. Calculate the number of events and non-events in each group (bin)
+        3. Calculate the % of events and % of non-events in each group.
+        4. Calculate WOE by taking natural log of division of % of non-events and % of events
+    Information value: IV = ∑ (% of non-events - % of events) * WOE
+        Less than 0.02--	Not useful for prediction
+        0.02 to 0.1--	Weak predictive Power
+        0.1 to 0.3--	Medium predictive Power
+        0.3 to 0.5--	Strong predictive Power
+        >0.5--	Suspicious Predictive Power
     
 
 
