@@ -1,0 +1,9 @@
+1. Content based systems, recommends item based on a similarity comparison between the content of the items and a user’s profile. 
+2. The feature of items are mapped with feature of users in order to obtain user – item similarity. 
+3. The top matched pairs are given as recommendations
+
+Stpes:
+1. Create a feature matrix for both user and Item(U(ie.U1,U2,U3....) and I(ie,I1,I2,...)
+2. For each user, the recommended item according to the users preferences are: MAX(Transpose(U)*I1,(Transpose(U)*I2,(Transpose(U)*I3,...)
+3. Ususlly, the items with higher scores obtained from the above formula are recommended to the user.
+
