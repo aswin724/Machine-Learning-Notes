@@ -13,7 +13,7 @@ Criterions used: http://www.saedsayad.com/decision_tree.htm
 1. Gini impurity:
 2. Information Entropy: Entropy pf parent- weighted avg of the entropy of the children if you split the parent
                         Entropy= sum(-prob.log base2(prob))
-                        Entropy of 2 attributes(or categories)= sum(prob.of attribute
+                        Entropy of 2 attributes(or categories)= sum(prob.of attribute*Entropy of the attribute)
                         IG of leaf node = 0 and Entropy of equally divided sample =1 
 
 Differences:
