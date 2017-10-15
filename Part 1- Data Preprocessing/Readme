@@ -3,3 +3,10 @@
 2. Missing Data, Categorical data encoding 
 3. Splitting 
 4. Feature scaling 
+
+
+Terms:
+1. Population Stability Index(PSI) = sum((% of actual-% of expected)*ln(%act/%exp))
+    Less than 0.1= no change in the distribution
+    0.1 to 0.25 = Medium changes
+    > 0.25= MAssive changes
