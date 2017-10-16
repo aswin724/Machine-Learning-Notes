@@ -10,8 +10,14 @@ Additional methods on top of Decision Trees:
 2. Gradient boosting 
 
 Criterions used: http://www.saedsayad.com/decision_tree.htm
-1. Gini impurity:
-2. Information Entropy: Entropy pf parent- weighted avg of the entropy of the children if you split the parent
+1. Gini impurity(lowet gini impurity is chosen): 1 – ( P(class1)^2 + P(class2)^2 + … + P(classN)^2)
+                 Favors larger partitions.
+                 Uses squared proportion of classes.
+                 Perfectly classified, Gini Index would be zero.
+                 Evenly distributed would be 1 – (1/# Classes).
+                 You want a variable split that has a low Gini Index.
+The algorithm works as 1 – ( P(class1)^2 + P(class2)^2 + … + P(classN)^2)
+2. Information gain(highest information gain..ie.lowest entropy is chosen): Entropy pf parent- weighted avg of the entropy of the children if you split the parent
                         Entropy= sum(-prob.log base2(prob))
                         Entropy of 2 attributes(or categories)= sum(prob.of attribute*Entropy of the attribute)
                         IG of leaf node = 0 and Entropy of equally divided sample =1 
