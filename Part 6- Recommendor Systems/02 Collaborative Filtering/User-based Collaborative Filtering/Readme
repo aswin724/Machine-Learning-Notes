@@ -1,0 +1,24 @@
+User-based Collaborative filtering in R- 
+Webinar notes- https://www.youtube.com/results?search_query=collaborative+filtering+in+r
+
+It is a technique of grouping customers by their buying preferences.
+ASSUMPTION- Users with similar preferences will rate items similarly 
+
+BASIC IDEAS:
+For a given customer A:
+a. Find a set of customers who have purchased/rated similar items in the past 
+b. Aggregate the items bought by these similar customers
+c. Eliminate the item the user has laready purchased/rated
+d. Present the rest of the items.
+
+Steps for Implementation:
+1. Data prep- 
+  a. Rather than getting the affinity of the user towards product by asking explicitly, we measure it by user-behaviour from the data 
+  b. Create a list of metrics that can help identify the user behaviour, and give a relative weight for each of theose behaviour to calculate the final affinity 
+  c. Metrics example- Add to cart, Add to wish list, Zoomed Product image, Repeat page views of product details page, Recency(Days since last visit)
+  d. Create USERID, ITEMID matrix
+
+2. Model creation (user based)
+3. Similarity weights/ k-NN, Cosine similarity
+4. Predict
+5. Evaluate accuracy - RMSE, Mean of Average Error 
