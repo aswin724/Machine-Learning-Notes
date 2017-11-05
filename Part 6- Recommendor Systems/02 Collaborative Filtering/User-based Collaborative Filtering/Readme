@@ -18,7 +18,15 @@ Steps for Implementation:
   c. Metrics example- Add to cart, Add to wish list, Zoomed Product image, Repeat page views of product details page, Recency(Days since last visit)
   d. Create USERID, ITEMID matrix
 
-2. Model creation (user based)
-3. Similarity weights/ k-NN, Cosine similarity
+2. Model creation (user based)--- use "UBCF"
+
+3. Similarity weights/ k-NN, Cosine similarity--- to find similar group of users 
+  a. Cosine similarity measure: The smaller the angle b/w the user rating vectors, the similar they are
+    a.1.  Formula:  similairty(X,Y) where X,Y are user rating vectors= cos theta = X.Y/(mod(X)*mod(Y))
+  b. Then use KNN to get the ideal count of similar users 
+  
 4. Predict
+  a. Predict for missing ratings of active user -- average of the ratings given by similar users 
+  b. top N-predictions for each user 
+  
 5. Evaluate accuracy - RMSE, Mean of Average Error 
